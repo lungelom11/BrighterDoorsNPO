@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="./images/brighter doors.png"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brighter Doors</title>
+     <!--Font Awesome-->
+     <script src="https://kit.fontawesome.com/dfdca4fe71.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" charset="UTF-8"></script>
+    <!--CSS----->
+    <link rel="stylesheet" href="./css/style.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Hero Section---------->
+    <header class="header">
+        <nav>
+            <div class="logo">
+                <img src="./images/brighter_logo.png" alt="">
+            </div>
+            <button class="toggle-nav" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <div class="menu">
+                <ul class="menu-list">
+                  <li class="menu-item"><a href="#main" class="menu-link">Home</a></li>
+                  <li class="menu-item"><a href="#section" class="menu-link">About Us</a></li>
+                  <li class="menu-item"><a href="#what-we-do" class="menu-link">What We do</a></li>
+                  <li class="menu-item"><a href="./campaigns.html" class="menu-link">Campaigns</a></li>
+                  <li class="menu-item"><a href="#role-play" class="menu-link">Play A Role</a></li>
+                    <div class="sign-in">
+                        <button onclick="window.location.href='./login'" class="sign-in-btn">SIGN IN</button>
+                    </div>
+                </ul>
+                
+            </div>
+        </nav>
+        <div class="header-text">
+            <h2 class="header-item">We Are</h2>
+            <h1 class="header-item">Brighter Doors House NPO</h1>
+            <h3 class="header-item">A dedicated non-profit organization committed to making a positive impact in the lives of orphans and victims of gender-based violence (GBV)</h3>
+        </div>
+    </header>
+    <!--Donate Box-->
+    <div class="donate" onclick="window.location.href='./donate'" >
+        <span class="heart"><i class="fa-solid fa-heart" style="color: #ffffff;"></i></span>
+        <h3>DONATE</h3>
+    </div>
+    <!--What we do Section-->
+    <main id="what-we-do" class="what-we-do">
+        <h1>What we do</h1>
+        <p>We aim to address the unique challenges and traumas faced by these individuals and provide them with holistic care and support.</p>
+
+        <div class="services">
+            <div class="service support">
+                <h2 class="service-header">Provide Comprehensive Support</h2>
+            </div>
+            <div class="service empowerment">
+                <h2 class="service-header">Empowerment</h2>
+            </div>
+            <div class="service trauma">
+                <h2 class="service-header">Handling Loss and Trauma</h2>
+            </div>
+        </div>
+    </main>
+
+   <!--News and Updated Section-->
+   <section class="updates">
+        <h3>Blog</h3>
+        <h1>
+            News & <br> Upcoming Events
+        </h1>
+        <div class="events">
+            <div class="event">
+                <div class="event-box">
+                    <h2 class="event-header">Event 1</h2>
+                </div>
+                <p class="date">July 2023 - September 2023</p>
+            </div>
+            <div class="event">
+                <div class="event-box">
+                    <h2 class="event-header">Event 2</h2>
+                </div>
+                <p class="date">September 2023 - November 2023</p>
+            </div>
+        </div>
+   </section>
+    <!--Sign Up Section------>
+    <section class="sign-up">
+        <h1>GET THE LATEST IN YOUR IN BOX</h1>
+        <p>Get exclusive updates on our work and how you can help.</p>
+        <button onclick="window.location.href='./sign-up'" class="sign-up-btn">SIGN UP TODAY</button>
+    </section>
+    <!--Role Play------->
+    <section id="role-play" class="role">
+        <h1>YOU HAVE A ROLE <br> TO PLAY</h1>
+        <div class="line"></div>
+        <p>Together, we can build a world where everyone has the safety they deserve. <br> Join us.</p>
+
+        <div class="play-role">
+           <div class="role-box">
+                <div class="icon">
+                    <img src="./images/5917.jpg" alt="Dollar Sign">
+                </div>
+                <p>You make our programs possible & your support is saving lives</p>
+                <button class="role-btn">DONATE</button>
+           </div>
+           <div class="role-box">
+            <div class="icon">
+                <img src="./images/7718868.jpg" alt="Think">
+            </div>
+            <p>Learn more about the challenges facing communities & why our work is needed</p>
+            <button class="role-btn">LEARN</button>
+       </div>
+        </div>
+
+    </section>
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="./images/brighter_logo.jpg" alt="">
+        </div>
+        <div class="copyright">
+            <p> &copy;Brighter Doors House NPO</p>
+        </div>
+        <div class="social-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </footer>
+    <!--JQuery for Nav bar-->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $(window).on('scroll', function(){
+                if ($(window).scrollTop()){
+                    $("nav").addClass('bgc');
+                } else {
+                    $("nav").removeClass('bgc');
+                }
+            });
+        });
+    </script>
+</body>
+    <!--Javascript-->
+    <script src="./js/script.js"></script>
+</html>

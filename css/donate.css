@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+/*Header section*/
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #ffb809;
+}
+header{
+    border: 1px solid #1d1b1b;
+    min-height: 100vh;
+    background-color: black;
+    border-radius: 0 0 0 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header::before{
+    content: '';
+    background-image: url(../images/hero-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+    border-radius: 0 0 0 200px;
+}
+/*------------DONATE STYLE-----------*/
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background: #fff;
+    max-width: 800px;
+    padding: 0 2rem 2rem 2rem;
+    border-radius: 10px;
+    margin: 3rem 0;
+}
+.logo-img{
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+}
+.logo-img img{
+    width: 100%;
+    height: 100%;
+}
+.give-text{
+    text-align: center;
+    color: gray;
+    margin-bottom: 2rem;
+    font-size: 15px;
+}
+
+.donate-options{
+    display: flex;
+    height: 55px;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 400px;
+    border-radius: 8px;
+    align-items: center;
+    border: 1px solid gray;
+    cursor: pointer;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.donate-options i{
+    font-size: 25px;
+    transition: .3s;
+}
+.container.active .donate-options i{
+    transform: rotate(-180deg);
+}
+.options{
+    position: relative;
+    padding: 1rem;
+    margin-top: 10px;
+    border-radius: 10px;
+    background: #fff;
+    list-style: none;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+.container.active .options{
+    display: block;
+}
+.options .option{
+    height: 55px;
+    cursor: pointer;
+    padding: 1rem;
+    align-items: center;
+    background: #f7f3f3;
+    border-radius: 10px;
+    margin: .5rem 0;
+    transition: all .5s ease;
+}
+.options .option:hover{
+    background: #cac2c2;
+    padding: 1.2rem ;
+}
+.options .option .option-text{
+    font-size: 1rem;
+}
+
+.home-btn{
+    margin: 1rem;
+}
+.home-btn button{
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #fff;
+    color: #1d1b1b;
+    border-radius: 10px;
+    transition: .4s;
+}
+.home-btn button:hover {
+    background: #dbd1d1;
+    cursor: pointer;
+}
+#donate-button-container{
+    text-align: center;
+    margin: 2rem 0;
+}
+/*---Footer Section-----*/
+.footer{
+    background: #1d1b1b;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer-logo{
+    height: 100px;
+}
+.footer-logo img{
+    height: 100%;
+}
+.copyright p{
+    color: #fff;
+    font-size: 1rem;
+}
+.fa-brands{
+    margin: .8rem;
+    background: #ffb809;
+    padding: .7rem;
+    font-size: 1.3rem;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+.fa-brands:hover{
+    cursor: pointer;
+    background: #1d1b1b;
+    border: 1px solid #ffb809;
+    color: #ffb809;
+    font-size: 1.4rem;
+}   

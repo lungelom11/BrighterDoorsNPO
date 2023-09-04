@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+/*Header section*/
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #000000;
+}
+header{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header::before{
+    content: '';
+    background-image: url(../images/hero-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.3;
+}
+
+form {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 10px;
+    z-index: 100;
+
+    animation-name: form-in;
+    animation-duration: 1s;
+}
+form h2 {
+    color: #ffb809;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+form input{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #d8cece;
+    font-size: 1rem;
+}
+form button {
+    padding: 10px;
+    background: #ffb809;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+    transition: .3s;
+}
+form button:hover{
+    background: #fff;
+    color: #ffb809;
+    padding: 12px;
+    font-size: 19px;
+    border: 2px solid #ffb809;
+}
+form p {
+    color: gray;
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+
+/* Formr Animation */
+
+@keyframes form-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

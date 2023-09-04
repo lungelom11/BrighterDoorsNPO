@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffb809;
+}
+.top-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.dbox-donation-button {
+    width: 200px;
+    height: 50px;
+    margin-top: 1rem;
+}
+.top-bar img {
+    width: 100px;
+    height: 100px;
+}
+.donation-form {
+    margin: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/*---Footer Section-----*/
+.footer{
+    background: #1d1b1b;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer-logo{
+    height: 100px;
+}
+.footer-logo img{
+    height: 100%;
+}
+.copyright p{
+    color: #fff;
+    font-size: 1rem;
+}
+.fa-brands{
+    margin: .8rem;
+    background: #ffb809;
+    padding: .7rem;
+    font-size: 1.3rem;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+.fa-brands:hover{
+    cursor: pointer;
+    background: #1d1b1b;
+    border: 1px solid #ffb809;
+    color: #ffb809;
+    font-size: 1.4rem;
+}   
